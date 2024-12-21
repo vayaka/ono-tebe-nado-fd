@@ -1,1 +1,137 @@
 /* место для вашего кода */
+
+.header {
+  display: grid;
+  margin: 92px 0 96px 0;
+  grid-template-columns: 1fr min-content 1fr; /* Три равные колонки */
+  align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+.header__menu {
+  display: flex;
+  padding: 0 0 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px; /* ширина логотипа */
+  height: 105px; /* высота логотипа */
+  background: url(../images/logo-black.svg) no-repeat center center;
+  background-size: contain;
+
+}
+
+.header__address {
+  max-width: 300px;
+  justify-self: end;
+  margin: 5px 85px 0 0;
+}
+
+.header__address a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+}
+
+.address {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-style: normal;
+}
+
+/* Endblock header */
+
+/* Block Cover */
+
+.cover {
+  position: relative;
+  background: url(../images/cover.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Полупрозрачный тёмный фон */
+}
+
+.cover__title {
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115px; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block; /* Превращаем слова в блочные элементы */
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing::after {
+  letter-spacing: 0;
+}
+
+/* Описание */
+.cover__description {
+  position: relative;/* Разместить над оверлеем */
+}
+
+.cover__description-text {
+  font-size: 20px;
+  word-spacing: 5px; /* Увеличиваем расстояние между словами */
+  margin-bottom: 20px;
+}
+
+/* Кнопка */
+.bet-button {
+  font: inherit; /* Унаследовать шрифт от родителя */
+  border: 2px solid white; /* Белая рамка */
+  padding: 10px 20px; /* Внутренние отступы */
+  background: transparent; /* Прозрачный фон */
+  color: white; /* Цвет текста */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
