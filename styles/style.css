@@ -46,24 +46,23 @@
   background-size: contain;
 }
 
-.header__address {
-  justify-self: end;
-  max-width: 300px;
-  padding: 0px 82px 0 0;
-}
-
-.header__address a {
-  font-size: 18px;
-  line-height: 1.35;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 4px;
-}
 
 .address {
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
 }
+
+.address a {
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
+}
+.header__address {
+  justify-self: end;
+  max-width: 300px;
+  padding: 0px 82px 0 0;
+}
+
 
 /* Endblock header */
 
@@ -80,14 +79,13 @@
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: -1;
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Полупрозрачный тёмный фон */
 }
 
 .cover__title {
   position: relative;
-  z-index: 2;
   padding: 165px 50px 104.5px 50px;
   font-weight: 700;
   font-size: 100px;
@@ -173,32 +171,32 @@
 
 .card {
   position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
   min-height: 596px;
   color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background: url(../images/card-lot-02.jpg) no-repeat center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background: url(../images/card-lot-03.jpg) no-repeat center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
   position: relative;
-  z-index: 2;
   padding: 48px 40px 0 40px;
   font-size: 22px;
   line-height: 1.2;
@@ -209,7 +207,6 @@
 
 .card__text {
   position: relative;
-  z-index: 2;
   height: 100%;
   padding: 0 40px 48px 40px;
   font-size: 20px;
@@ -339,8 +336,6 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   padding: 2px 0 0 50px;
-  font-size: 18px;
-  line-height: 1.35;
   text-decoration-skip-ink: none;
   text-underline-offset: 3px;
 }
