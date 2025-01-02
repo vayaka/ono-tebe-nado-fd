@@ -305,7 +305,6 @@
   grid-column: 3 / 4;
 }
 
-.footer__social-list,
 .footer__menu-list {
   list-style: none;
 }
@@ -326,6 +325,7 @@
   display: flex;
   gap: 48px;
   padding-left: 76px;
+  list-style: none;
 }
 
 .footer__social-icon {
@@ -336,8 +336,8 @@
 .footer__address {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding: 2px 0 0 50px;
   font-size: 18px;
   line-height: 1.35;
   text-underline-offset: 3px;
-  padding: 2px 0 0 50px;
 }
