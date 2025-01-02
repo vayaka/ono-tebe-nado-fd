@@ -178,9 +178,9 @@
   width: 334px;
   min-height: 596px;
   color: white;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_film {
