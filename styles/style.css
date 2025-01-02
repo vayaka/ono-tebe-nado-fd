@@ -335,4 +335,5 @@
   font-size: 18px;
   line-height: 1.35;
   text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
 }
