@@ -303,15 +303,16 @@
 }
 
 .footer__social-list {
+  display: flex;
   grid-column: 3 / 4;
-}
-
-.footer__menu-list {
+  gap: 48px;
+  padding-left: 76px;
   list-style: none;
 }
 
 .footer__menu-list {
   padding: 3px 0 0 0;
+  list-style: none;
 }
 
 .footer__menu-link {
@@ -320,13 +321,6 @@
 
 .footer__menu-link_active {
   text-decoration: none;
-}
-
-.footer__social-list {
-  display: flex;
-  gap: 48px;
-  padding-left: 76px;
-  list-style: none;
 }
 
 .footer__social-icon {
